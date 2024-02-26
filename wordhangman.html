@@ -1,0 +1,71 @@
+<!-- Alexander Pavlovic alpa7946 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/death-star" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.png">
+    <script src="keyboardscript.js"></script>
+
+    <title>PROG</title>
+
+</head>
+<body>
+    <main>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+            </ul>        
+        </nav>
+
+        <game-section>
+            <h1 id="game-title">Hangman Game</h1>
+
+            <article id="gameplan" class="container flex">
+            
+            <aside class="left_side gallows">
+                      <div class="crossbarOne"></div>
+                      <div class="floor"></div>
+                      <div class="supporter"></div>
+                      <div class="crossbar"></div>
+                      <div class="post">
+                        <div class="deadguy head"></div>
+                        <div class="deadguy body">
+                          <div class="deadguy right-arm"></div>
+                          <div class="deadguy left-arm"></div>
+                          <div class="deadguy left-leg"></div>
+                          <div class="deadguy right-leg"></div>
+                        </div>
+                      </div>
+            </aside>
+           
+            <div class="right_side">
+                <div class="choose_theme">
+                  Choose a difficulty<br><br>
+                  <button type="button" class="theme game-btns" value="0">Easy</button>
+                  <button type="button" class="theme game-btns" value="1">Medium</button>
+                  <button type="button" class="theme game-btns" value="2">Hard</button>
+                </div>
+                <div id="theme_display"></div>
+                <div id="result_display"></div>
+                <div id="word_description"></div>
+                <div id="word_display"></div><br>
+                <div id="keybord"></div>
+                <br>
+                <button type="button" class="new_game game-btns">Reset Game</button>
+              </div>
+                    
+            </article>
+
+            <button id="back-btn2" class="game-btns" onclick="game_back2()">Back</button>
+            
+        </game-section> 
+    </main>
+
+
+</body>
+</html>

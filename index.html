@@ -1,0 +1,121 @@
+<!-- Alexander Pavlovic alpa7946 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/death-star" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.png">
+    <title>GAMESPACE</title>
+</head>
+<body>
+    
+    <main>
+
+        <nav id="navbar">
+            <ul>
+                <li><a href="#games-h1">Games</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a id="linked-icon" class="linkedin-icon" href="https://www.linkedin.com/in/alexander-pavlovic-00390a238/">
+                <img alt="linkedin" class="linked-img" src="imgs/linked-icon.png">
+            </a>
+        </nav>
+
+        <article id="main-info">
+            <h1 class="neon" data-text="U">GAM<span class="flicker-slow">E</span> SP<span class="flicker-fast">AC</span>E</h1>
+            <h2><span class="span1">Creator:</span> Alexander Pavlovic</h2>
+            <h3>Student at Stockholm University</h3>
+        </article>
+
+        
+
+
+    </main>
+
+    <seperator-section></seperator-section>
+
+    <games-section>
+
+        <h1 id="games-h1" class="section-title">Games</h1>
+
+        <article id="games">
+            <a href="quiz.html" class="game-btn" id="game1"></a>
+            <a href="math.html" class="game-btn" id="game2"></a>
+            <a href="hangman.html" class="game-btn" id="game3"></a>
+        </article>
+    </games-section>
+
+    <seperator-section></seperator-section>
+
+    <about-section>
+
+    <h1 id="about" class="section-title">About</h1>
+    
+    <article>
+        
+
+        <aside>
+            <h3><span class="span1">Name:</span> Alexander Pavlovic</h3>
+            <h3><span class="span1">University:</span> Stockholmsuniversitet</h3>
+            <h3><span class="span1">Qualification:</span> Data -systemvetenskap</h3>
+            <h3><span class="span1">Orientation:</span> Digitala medier</h3>
+            <h3><span class="span1">Linkedin:</span></h3>
+
+            <a class="linkedin-icon" href="https://www.linkedin.com/in/alexander-pavlovic-00390a238/">
+                <img alt="linkedin" class="linked-img" src="imgs/linked-icon.png">
+            </a>
+        </aside>
+
+        <aside>
+            <img alt="aboutimg" id="about-img" src="imgs/jag.jpg">
+        </aside>
+    </article>
+
+
+    </about-section>
+
+    <seperator-section></seperator-section>
+
+    <contact-section>
+        
+    <h1 id="contact" class="section-title">Contact</h1>
+
+        <form action="https://formsubmit.co/sveasite@hotmail.com" method="post" enctype="multipart/form-data" onsubmit="return validate()" >
+
+            <article>
+                <aside>
+                    <input type="text" class="fname" placeholder="Your Name:" required>  
+                    <input type="email" class="fepost" placeholder="Your Email:"  
+                     name="fepost" required>
+                  
+                     <input type="text" id="famne" placeholder="Subject:"  
+                     name="famne" required>
+                </aside>
+    
+      
+                     
+                 <input type="hidden" name="_next" value="https://people.dsv.su.se/~alpa7946/mailreceived.html">
+                 <input type="hidden" name="_subject" value="New submission!">
+                 <input type="hidden" name="_captcha" value="false">
+      
+      
+                <textarea name="comment" class="fmsg" placeholder="Message..." required></textarea>
+            </article>
+
+            
+    
+            <input type="submit" class="form-btn" value="Send" name="file">    
+            
+    
+          </form>      
+
+    </contact-section>
+
+</body>
+</html>

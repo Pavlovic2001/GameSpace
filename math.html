@@ -1,0 +1,70 @@
+<!--Alexander Pavlovic alpa7946-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/death-star" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.png">
+
+    <title>MATH</title>
+    <script src="math_script.js"></script>
+
+</head>
+  <body>
+    <main>
+
+      <nav id="navbar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+        </ul>        
+    </nav>
+
+    <game-section>
+      
+      <article id="math-article">
+        <h1 id="game-title">MATH GAME</h1>
+        <h3 id="math-h2">10 points to win</h3>
+        <aside id="stats">
+          <p id="lives">Lives: 3</p>
+          <p id="score">Score: 0</p>
+          <p id="skip">Skips: 3</p>
+        </aside>
+      </article>
+   
+      <form id="math_game">
+        <p>Solve the following equation:</p>
+        <p id="equation"></p>
+        <label for="answer">Answer:</label>
+      
+        <input type="text" id="answer" name="answer">
+        <p id="result"></p>
+
+        <button class="game-btns" type="button" onclick="checkAnswer()">Check Answer</button>
+        <button class="game-btns" type="button" onclick="skipFunction()">Skip Equation</button>
+
+      </form>
+
+      <aside id="operatorButtons">
+        <button class="game-btns" type="button" onclick="startGame('+')">Addition Game</button>
+        <button class="game-btns" type="button" onclick="startGame('/')">Division Game</button>
+        <button class="game-btns" type="button" onclick="startGame('-')">Subtraction Game</button>
+        <button class="game-btns" type="button" onclick="startGame('*')">Multiplication Game</button>
+      </aside>
+
+      <button id="reseter" class="game-btns" type="button" onclick="resetGame()">Reset</button>
+
+
+      <aside id="restart-aside">
+        <p id="exit-info">Reset all your stats</p>
+        <input id="math-restart-btn" class="game-btns" type='button' value='Back' onclick="back()">      
+      </aside>
+
+</game-section>
+</main>
+
+</body>
+</html>

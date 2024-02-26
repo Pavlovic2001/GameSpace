@@ -1,0 +1,129 @@
+<!-- Alexander Pavlovic alpa7946 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/death-star" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.png">
+
+    <title>PROG</title>
+
+</head>
+<body>
+    <main>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+            </ul>        
+        </nav>
+
+        <game-section>
+            <h1 id="game-title">Hangman Game</h1>
+
+            <article id="intro-box">
+                    <aside id="robot-box">
+                        <img id="robot" src="imgs/robot.svg" alt="robot">
+                        <aside id="chatt">
+                            <img class="msg-box fadeup" src="imgs/chatt1.svg" alt="chatt1">
+                            <img class="msg-box fadeup2" src="imgs/chatt2.svg" alt="chatt2">
+                        </aside>
+                    </aside>
+
+                    <button class="game-btns popup-trigger">Info</button>
+
+                    <button class="game-btns" onclick="options()">Start</button>
+
+            <div class="popup">
+    <div class="popup__content">
+        <div class="popup__body">
+            <button class="popup__close" type="button" ></button>
+            <div class="popup__text">
+                <p>
+                    Welcome to the Hangman game! In this game, you will be presented with Java programming equations and hidden words, and your goal is to solve them to guess the correct letters in the hidden word. Here's how to play:
+                </p>
+                
+                <aside id="info-list">
+                    <p>1: Click "Start" to get to pick the game.</p>
+                    <p>"2": Equation: Solve the equation to reveal a letter in the hidden word.</p>
+                    <p>"2": Word guessing: Guess a letter by clicking on the keyboard to reveal it.</p>
+                    <p>3: You have a limit of six incorrect attempts before losing, so answer and guess them wisely.</p>
+                    <p>4: Keep guessing letters until the word is revealed.</p>
+                    <p>5: Click "Reset Game" to restart the game and generate a new hidden word or to start over on the equations.</p>
+                </aside>
+                <p>Enjoy playing Hangman!</p>
+            </div>
+        </div>
+    </div>
+            </div>            
+            <script src="info_script.js"></script>
+
+            </article>
+
+            <article id="option-box">
+
+                <h2>Pick one category</h2>
+                <aside>
+                    <button class="game-btns" onclick="startGame1()">Equation</button>
+                    <button class="game-btns" onclick="word()">Word Guessing</button>
+                </aside>
+                <button class="game-btns" onclick="back()">Back</button>
+
+            </article>
+
+            <article id="gameplan" class="container flex">
+            
+            <aside class="left_side gallows">
+                      <div class="crossbarOne"></div>
+                      <div class="floor"></div>
+                      <div class="supporter"></div>
+                      <div class="crossbar"></div>
+                      <div class="post">
+                        <div class="deadguy head"></div>
+                        <div class="deadguy body">
+                          <div class="deadguy right-arm"></div>
+                          <div class="deadguy left-arm"></div>
+                          <div class="deadguy left-leg"></div>
+                          <div class="deadguy right-leg"></div>
+                        </div>
+                      </div>
+            </aside>
+           
+            <aside class="right_side">
+
+             <aside id="equation-container">
+             <div id="equation"></div>
+             <input class="answer-box" type="text" id="answer">
+             <button class="game-btns" onclick="checkAnswer()">Check Answer</button>
+             <div id="result"></div>
+             <button class="game-btns" onclick="resetGame()">Reset Game</button>
+
+            </aside>
+       
+            </aside>
+                    
+            </article>
+
+
+
+            <article id="win-box">
+                <h3>Congratulations, you won</h3>
+                <h4>You have successfully saved the hangman from the gallows!</h4>
+                <img src="imgs/trophy.png" id="trophy" alt="trophy">
+                <aside>
+                    <button class="game-btns" onclick="again()">Play Again</button>
+                    <button class="game-btns" onclick="exit()">Exit</button>
+                </aside>
+            </article>
+
+            <button id="back-btn" class="game-btns" onclick="game_back()">Back</button>
+            
+        </game-section> 
+    </main>
+    <script src="hangman_equation_script.js"></script>
+
+</body>
+</html>
